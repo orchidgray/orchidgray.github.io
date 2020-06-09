@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="theme-color" content="#DAEAC8">
+<meta name="apple-mobile-web-app-status-bar-style" content="#DAEAC8">
+<link rel="icon" href="http://yaksa.hs.kr/m/images/USE-home-icon.png" />
+<title>SEOJUNHA.COM</title>
+</head>
+<body bgcolor=DAEAC8>
+<font size=32>
+<table align=center border=0>
+<tr align=center>
+<!--<td><h2>빈칸</h2><p><h1><script>
+var Now=new Date();
+var Input=new Date("Nov 14,2019");
+var Dday=Now.getTime()-Input.getTime();
+Dday=Math.floor(Dday/(1000*60*60*24));
+var str = "D"+Dday+"일"
+document.write(str)
+</script></h1></td>-->
+<td colspan=5><h1>서준하닷컴</h1>
+<p><h2 class = "clock"></h2><script>
+const clock = document.querySelector('.clock');
+function getTime(){
+const time = new Date();
+const hour = time.getHours();
+const minutes = time.getMinutes();
+const seconds = time.getSeconds();
+clock.innerHTML = `SEOJUNHA.COM ${hour<10 ? `0${hour}`:hour}:${minutes<10 ? `0${minutes}`:minutes}:${seconds<10 ? `0${seconds}`:seconds}`
+}
+function init(){
+setInterval(getTime, 10);
+}
+init();
+</script></td>
+</tr>
+<tr>
+<td><button onclick="location.href='https://web.kangnam.ac.kr/'"><h1>1번 버튼</h1></button></td>
+<td><button onclick="location.href='https://sae.kangnam.ac.kr/'"><h1>2번 버튼</h1></button></td>
+<td><button onclick="location.href='https://knuneulpoom.modoo.at/'"><h1>3번 버튼</h1></button></td>
+<td><button onclick="location.href='_hostingkr/dbadmin/'"><h1>4번 버튼</h1></button></td>
+<td><button onclick="location.href='http://xn--hy1b48koeu14f.xn--kj0b080b.xn--oi2b61z32a.xn--3e0b707e'"><h1>5번 버튼</h1></button></td>
+</tr>
+<tr>
+<td align=center><a href="https://naver.com/"><img src="https://s.pstatic.net/static/www/m/2019/img_logo_main_home.png" width=110 height=20></a></td>
+<td colspan=4><div id="search" class="search">
+
+<form id="sform" name="sform" action="https://search.naver.com/search.naver" method="get">
+
+	<fieldset>
+   		<legend class="blind">네이버 검색</legend>
+        <span class="green_window">
+            <input id="query" name="query" type="text" title="검색어 입력" maxlength="255" class="input_text" tabindex="1" accesskey="s" style="ime-mode:active;" autocomplete="off" onclick="document.getElementById('fbm').value=1;" value="">
+        </span>
+        <button id="search_btn" type="submit" title="검색" tabindex="3" class="sch_smit" onmouseover="this.className='sch_smit over'" onmousedown="this.className='sch_smit down'" onmouseout="this.className='sch_smit'" onclick="clickcr(this,'sch.action','','',event);"><span class="blind">검색</span><span class="ico_search_submit"></span></button>
+    </fieldset>
+</form></td>
+</tr>
+</table>
+&nbsp;
+<!--<details>
+<summary>중식 [ 펼치기 / 접기 ]</summary>
+<img src="https://www.ealimi.com/dext5File/2019/10/20191031_11282663_74905.jpg">
+</details>
+&nbsp;
+<details>
+<summary>석식 [ 펼치기 / 접기 ]</summary>
+<img src="https://www.ealimi.com/dext5File/2019/10/20191031_11282695_41437.jpg">
+</details>
+&nbsp;-->
+</font>
+<p align=center>
+최근 업데이트 : 2020/06/08
+<p align=center>
+<!--관리자 : 서준하 --><input type="button" value="도움말" onclick="alert('이 페이지에는 네이버에서 제공한 나눔글꼴이 적용되어 있습니다.');">
+<input type="button" value="새로고침" onclick="location.reload();">
+<p align=center>
+<a href='http://seojunha.com/'><img src="logo_footer.png"></a>
+</body>
+</html>
